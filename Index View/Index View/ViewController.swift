@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
+    
+    //MARK: - Properties
     var arrayOfFood = ["Apple", "Banana", "Cheeseburger", "Dragonfruit", "Enchilada", "Fries", "Guacamole", "Hamburger", "Icecream", "Jalapeno", "Kiwi", "Lemon", "Mango", "Nachos", "Okrah", "Potato", "Quiche", "Rice", "Sandwiches", "Tomato", "Ugli", "Venison", "Waffle", "Xacuti", "Yucca", "Zuchinni"]
     
     var foodDictionary = [String: [String]]()
@@ -31,6 +33,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    
+    //MARK: - Table view data source
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let foodKey = foodSectionTitles[section]
         
